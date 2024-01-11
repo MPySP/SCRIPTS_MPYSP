@@ -1,0 +1,217 @@
+---
+title: "INDICADORES_ILQ_PIRASOA"
+author: "Rafael Ruiz Montero"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+      toc: true
+      toc_depth: 2
+      number_sections: true
+      theme: paper
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = F)
+
+
+library(tidyverse)
+library(janitor)
+library(knitr)
+# library(DescTools)
+library(lubridate)
+library(gtsummary)
+
+# ELIMINAR ETIQUETAS
+clear.labels <- function(x) {
+  if(is.list(x)) {
+    for(i in 1 : length(x)) class(x[[i]]) <- setdiff(class(x[[i]]), 'labelled') 
+    for(i in 1 : length(x)) attr(x[[i]],"label") <- NULL
+  }
+  else {
+    class(x) <- setdiff(class(x), "labelled")
+    attr(x, "label") <- NULL
+  }
+  return(x)
+}
+
+
+patients <- readRDS("DATA/DATA_RDS/tbl_pats.rds") %>% clean_names() %>% clear.labels()
+
+patients <- patients %>% 
+  rename(finalizado = p_u_checkbox,
+         especialidad_qx = p_u_text1,
+         servicio_1_ingreso = p_u_text2,
+         date_no_conocida = p_u_text3,
+         si_no_desconocido = p_u_useryesno1)
+
+patients <- patients %>% 
+  select(-w_code, -p_u_number,-p_u_start_time, -p_u_end_time,
+         -p_u_useryesno2, -p_u_useryesno3, -p_u_useryesno4, -p_u_useryesno5,
+         -p_u_useryesno6, -p_u_useryesno7, -p_u_useryesno8, -p_u_useryesno9)
+
+operations <- readRDS("DATA/DATA_RDS/tbl_op.rds") %>% clean_names() %>% clear.labels()
+
+operations <- operations %>% 
+  rename(revisar1 = op_u_checkbox,
+         revisar2_date = op_u_start_time,
+         administracion_atb = op_u_text2)
+         
+operations <- operations %>% 
+  select(-op_ordooropenings, -op_non_icd9_code, -op_non_icd9_code_spec, -op_u_number,-op_u_end_time,
+         -op_u_text1, -op_u_text3,-op_u_useryesno2,
+         -op_u_useryesno2, -op_u_useryesno3, -op_u_useryesno4, -op_u_useryesno5,
+         -op_u_useryesno6, -op_u_useryesno7, -op_u_useryesno8, -op_u_useryesno9, 
+         -op_u_useryesno10)
+
+
+operations <- operations %>% 
+  mutate(riesgo_qx1 = case_when(
+    op_asa == "A1" ~ 0,
+    op_asa == "A2" ~ 0,
+    op_asa == "A3" ~ 1,
+    op_asa == "A4" ~ 1,
+    op_asa == "A5" ~ 1
+  )) %>% 
+  mutate(riesgo_qx2 = case_when(
+    op_code == "CARD" & op_opdur/60 > 5 ~ 1,
+    op_code == "CBGB" & op_opdur/60 > 5 ~ 1,
+    op_code == "CBGC" & op_opdur/60 > 4 ~ 1,
+    op_code == "COLO" & op_opdur/60 > 3 ~ 1,
+    op_code == "CATA" & op_opdur/60 > 3 ~ 1,
+    op_code == "HPRO" & op_opdur/60 > 2 ~ 1,
+    op_code == "KPRO" & op_opdur/60 > 2 ~ 1,
+    op_code == "CHOL" & op_opdur/60 > 2 ~ 1,
+    op_code == "LAM" & op_opdur/60 > 2 ~ 1,
+    op_code == "CSEC" & op_opdur/60 > 1 ~ 1,
+    TRUE ~ 0
+  )) %>% 
+  mutate(riesgo_qx3 = case_when(
+    op_woundclass == "W1" ~ 0,
+    op_woundclass == "W2" ~ 0,
+    op_woundclass == "W3" ~ 1,
+    op_woundclass == "W4" ~ 1
+    )) %>% 
+  mutate(riesgo_qx4 = case_when(
+    op_endoscopic == "N" ~ 0,
+    op_endoscopic == "Y" ~ -1
+    )) %>% 
+  mutate(riesgo_qx = 
+           riesgo_qx1 + riesgo_qx2 + riesgo_qx3 + riesgo_qx4) %>% 
+  mutate(riesgo_qx = as.factor(riesgo_qx)) %>% 
+  mutate(op_code = as.factor(op_code))
+
+         
+# 
+# operations$op_endoscopic %>% as.factor() %>% levels()
+# 
+# hai <- readRDS("DATA/DATA_RDS/hai.rds") %>% clean_names() %>% clear.labels()
+# tbl_hai_res <- readRDS( "DATA/DATA_RDS/hai_results.rds") %>% clean_names() %>% clear.labels()
+# 
+# 
+# # hospital <- readRDS("DATA/DATA_RDS/hospital.rds") %>% clean_names()
+# # hospital_data <- readRDS("DATA/DATA_RDS/hospital_data.rds") %>% clean_names()
+# # ward <- readRDS("DATA/DATA_RDS/ward.rds") %>% clean_names()
+# # ward_data <- readRDS("DATA/DATA_RDS/ward_data.rds") %>% clean_names()
+# # ward_data_surveillance <- readRDS("DATA/DATA_RDS/ward_data_surveillance.rds") %>% clean_names()
+# # collectors <- readRDS("DATA/DATA_RDS/collectors.rds") %>% clean_names()
+# tbl_exp <- readRDS("DATA/DATA_RDS/expositions.rds") %>% clean_names() %>% clear.labels()
+
+
+# buscar no finalizados o 
+
+```
+
+
+```{r}
+operations %>% 
+  tabyl(op_code, op_has_ssi) %>% 
+  adorn_totals(where = "col") %>% 
+  mutate(porcentaje_yes = round(Y/Total*100, digits = 2)) %>% 
+  mutate(pirasoa = case_when(
+    op_code == "CATA" ~ "IRASH060",
+    op_code == "CSEC" ~ "IRASH055",
+    op_code == "CHOL" ~ "IRASH049",
+    op_code == "LAM" ~ "IRASH044",
+    op_code == "KPRO" ~ "IRASH039",
+    op_code == "HPRO" ~ "IRASH034",
+    op_code == "COLO" ~ "IRASH028",
+    op_code == "CBGB" ~ "IRASH023A",
+    op_code == "CBGC" ~ "IRASH023B",
+    op_code == "CARD" ~ "IRASH023C",
+    
+    TRUE ~ "NO"
+  )) %>% 
+  arrange(pirasoa) %>% 
+  select(pirasoa, everything()) %>% 
+  kable()
+```
+
+```{r}
+operations %>% 
+  group_by(op_code, riesgo_qx, op_has_ssi, .drop = FALSE) %>% 
+  count() %>% 
+  mutate(n = replace_na(n,0)) %>% 
+  pivot_wider(names_from = op_has_ssi, values_from = n, values_fill = 0) %>% 
+  adorn_totals(where = "col") %>%
+  mutate(porcentaje_yes = round(Y/Total*100, digits = 2)) %>% 
+  mutate(pirasoa = case_when(
+    
+    op_code == "CBGB" & riesgo_qx == "0" ~ "IRASH024A",
+    op_code == "CBGC" & riesgo_qx == "0" ~ "IRASH024B",
+    op_code == "CARD" & riesgo_qx == "0" ~ "IRASH024C",
+    
+    op_code == "CBGB" & riesgo_qx == "1" ~ "IRASH025A",
+    op_code == "CBGC" & riesgo_qx == "1" ~ "IRASH025B",
+    op_code == "CARD" & riesgo_qx == "1" ~ "IRASH025C",
+    
+    op_code == "CBGB" & riesgo_qx == "2" ~ "IRASH026A",
+    op_code == "CBGC" & riesgo_qx == "2" ~ "IRASH026B",
+    op_code == "CARD" & riesgo_qx == "2" ~ "IRASH026C",
+    
+    op_code == "CBGB" & riesgo_qx == "3" ~ "IRASH027A",
+    op_code == "CBGC" & riesgo_qx == "3" ~ "IRASH027B",
+    op_code == "CARD" & riesgo_qx == "3" ~ "IRASH027C",
+    
+    op_code == "COLO" & riesgo_qx == "-1" ~ "IRASH029",
+    op_code == "COLO" & riesgo_qx == "0" ~ "IRASH030",
+    op_code == "COLO" & riesgo_qx == "1" ~ "IRASH031",
+    op_code == "COLO" & riesgo_qx == "2" ~ "IRASH032",
+    op_code == "COLO" & riesgo_qx == "3" ~ "IRASH033",
+    
+    op_code == "HPRO" & riesgo_qx == "0" ~ "IRASH035",
+    op_code == "HPRO" & riesgo_qx == "1" ~ "IRASH036",
+    op_code == "HPRO" & riesgo_qx == "2" ~ "IRASH037",
+    op_code == "HPRO" & riesgo_qx == "3" ~ "IRASH038",
+    
+    op_code == "KPRO" & riesgo_qx == "0" ~ "IRASH040",
+    op_code == "KPRO" & riesgo_qx == "1" ~ "IRASH041",
+    op_code == "KPRO" & riesgo_qx == "2" ~ "IRASH042",
+    op_code == "KPRO" & riesgo_qx == "3" ~ "IRASH043",
+    
+    op_code == "LAM" & riesgo_qx == "0" ~ "IRASH045",
+    op_code == "LAM" & riesgo_qx == "1" ~ "IRASH046",
+    op_code == "LAM" & riesgo_qx == "2" ~ "IRASH047",
+    op_code == "LAM" & riesgo_qx == "3" ~ "IRASH048",
+    
+    op_code == "CHOL" & riesgo_qx == "-1" ~ "IRASH050",
+    op_code == "CHOL" & riesgo_qx == "0" ~ "IRASH051",
+    op_code == "CHOL" & riesgo_qx == "1" ~ "IRASH052",
+    op_code == "CHOL" & riesgo_qx == "2" ~ "IRASH053",
+    op_code == "CHOL" & riesgo_qx == "3" ~ "IRASH054",
+    
+    op_code == "CSEC" & riesgo_qx == "0" ~ "IRASH056",
+    op_code == "CSEC" & riesgo_qx == "1" ~ "IRASH057",
+    op_code == "CSEC" & riesgo_qx == "2" ~ "IRASH058",
+    op_code == "CSEC" & riesgo_qx == "3" ~ "IRASH059",
+  
+    op_code == "CATA" & riesgo_qx == "0" ~ "IRASH061",
+    op_code == "CATA" & riesgo_qx == "1" ~ "IRASH062",
+    op_code == "CATA" & riesgo_qx == "2" ~ "IRASH063",
+    op_code == "CATA" & riesgo_qx == "3" ~ "IRASH064",
+    TRUE ~ "NO"
+  )) %>% 
+  arrange(pirasoa) %>% 
+  select(pirasoa, everything()) %>% 
+  kable()
+```
+
