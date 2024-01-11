@@ -1,0 +1,197 @@
+---
+title: "EJEMPLO MAPAS ANDALUCIA"
+author: "RRM"
+date: "23 December 2019"
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+
+###CARGAR PAQUETES
+library(rio)
+library(tidyverse)
+library(knitr)
+library(cartography)
+library(sf)
+library(viridis)
+
+getwd()
+
+
+
+```
+
+# DISTRITOS
+
+
+```{r, warning=FALSE}
+#Cargar Datos Distrito
+distrito_datos <- readxl::read_excel("DATA/DISTRITOS.xls")
+
+distrito_mapa <- st_read("MAPS/DISTRITOS/DistritoSanitario.shp")
+distrito_mapa <- distrito_mapa %>% 
+  left_join(distrito_datos, by = "CODDIST")
+
+cartography::choroLayer(distrito_mapa, var = "DATO", legend.title.txt = "Tasa de incidencia x 100.000 hab", legend.pos = "bottomright", method = "fisher-jenks", nclass = 5, legend.title.cex = 0.6, legend.values.cex = 0.5,   legend.values.rnd = 1, legend.nodata = "Sin casos", legend.horiz = TRUE, col = carto.pal(pal1 = "red.pal", n1 = 5))
+
+layoutLayer(title = "Distribución espacial brote listeriosis por Distrito Sanitario", tabtitle = TRUE, frame = TRUE, author = "Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)", sources = "Fuente: RedAlerta", north = TRUE, scale = FALSE)
+
+
+ggplot(distrito_mapa) +
+  geom_sf(aes(geometry = geometry, fill = DATO)) +
+  scale_fill_viridis(option = "magma", direction = -1, name = "Tasa de incidencia") +
+  labs(title = "Distribución espacial del brote de listeriosis", subtitle = "Tasa de incidencia x 100.000 habitantes", caption = "Fuente: Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)") +
+  theme_void() 
+
+
+```
+
+
+#CODIGOS POSTALES 
+
+```{r, warning=FALSE}
+#Cargar Datos CODIGOS POSTALES Distrito
+cp_datos <- readxl::read_excel("DATA/CODIGOS_POSTALES.xls")
+
+cp_mapa <- st_read("MAPS/CODIGOS_POSTALES/da05_cod_postal.shp")
+cp_mapa <- cp_mapa %>% 
+  left_join(cp_datos)
+
+cartography::choroLayer(cp_mapa, var = "DATO", legend.title.txt = "Tasa de incidencia x 100.000 hab", legend.pos = "bottomright", method = "fisher-jenks", nclass = 5, legend.title.cex = 0.6, legend.values.cex = 0.5,   legend.values.rnd = 1, legend.nodata = "Sin casos", legend.horiz = TRUE, col = carto.pal(pal1 = "red.pal", n1 = 5))
+
+layoutLayer(title = "Distribución espacial brote listeriosis por Código postal", tabtitle = TRUE, frame = TRUE, author = "Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)", sources = "Fuente: RedAlerta", north = TRUE, scale = FALSE)
+
+
+ggplot(cp_mapa) +
+  geom_sf(aes(geometry = geometry, fill = DATO)) +
+  scale_fill_viridis(option = "magma", direction = -1, name = "Tasa de incidencia") +
+  labs(title = "Distribución espacial del brote de listeriosis por Código postal", subtitle = "Tasa de incidencia x 100.000 habitantes", caption = "Fuente: Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)") +
+  theme_void() 
+```
+
+
+
+##SOLO CORDOBA 
+
+```{r, warning=FALSE}
+#Cargar Datos CODIGOS POSTALES Distrito
+cp_datos <- readxl::read_excel("DATA/CODIGOS_POSTALES.xls")
+
+cp_mapa <- st_read("MAPS/CODIGOS_POSTALES/da05_cod_postal.shp")
+cp_mapa <- cp_mapa %>% 
+  filter(COD_PROV == "14") %>% ##con este filtro es donde escojo la provincia de Córdoba
+  left_join(cp_datos)
+
+cartography::choroLayer(cp_mapa, var = "DATO", legend.title.txt = "Tasa de incidencia x 100.000 hab", legend.pos = "bottomright", method = "fisher-jenks", nclass = 5, legend.title.cex = 0.6, legend.values.cex = 0.5,   legend.values.rnd = 1, legend.nodata = "Sin casos", legend.horiz = TRUE, col = carto.pal(pal1 = "red.pal", n1 = 5))
+
+layoutLayer(title = "Distribución espacial brote listeriosis por Código postal en la provincia de Córdoba", tabtitle = TRUE, frame = TRUE, author = "Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)", sources = "Fuente: RedAlerta", north = TRUE, scale = FALSE)
+
+
+ggplot(cp_mapa) +
+  geom_sf(aes(geometry = geometry, fill = DATO)) +
+  scale_fill_viridis(option = "magma", direction = -1, name = "Tasa de incidencia") +
+  labs(title = "Distribución espacial del brote de listeriosis por Código postal", subtitle = "Tasa de incidencia x 100.000 habitantes", caption = "Fuente: Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)") +
+  theme_void() 
+```
+
+
+#MALLA ESTADISTICA 
+
+Solo se dibujan las 100 primeras celdas de 1 Km cuadrado
+
+```{r, warning=FALSE}
+#Cargar Datos CODIGOS POSTALES Distrito
+#cp_datos <- readxl::read_excel("DATA/CODIGOS_POSTALES.xls")
+
+malla_mapa <- st_read("MAPS/MALLA_ESTADISTICA/ig09_malla_1Km.shp")
+malla_mapa <- malla_mapa[1:100,]
+
+#plot(malla_mapa)
+
+#se genera un número del 1 al 100 en una nueva columna
+malla_mapa$DATO <- sample(100, size = nrow(malla_mapa), replace = TRUE)
+
+
+
+cartography::choroLayer(malla_mapa, var = "DATO", legend.title.txt = "Tasa de incidencia x 100.000 hab", legend.pos = "bottomright", method = "fisher-jenks", nclass = 5, legend.title.cex = 0.6, legend.values.cex = 0.5,   legend.values.rnd = 1, legend.nodata = "Sin casos", legend.horiz = TRUE, col = carto.pal(pal1 = "red.pal", n1 = 5))
+
+layoutLayer(title = "Distribución espacial brote listeriosis por Código postal", tabtitle = TRUE, frame = TRUE, author = "Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)", sources = "Fuente: RedAlerta", north = TRUE, scale = FALSE)
+
+
+ggplot(malla_mapa) +
+  geom_sf(aes(geometry = geometry, fill = DATO)) +
+  scale_fill_viridis(option = "magma", direction = -1, name = "Tasa de incidencia") +
+  labs(title = "Distribución espacial del brote de listeriosis por Código postal", subtitle = "Tasa de incidencia x 100.000 habitantes", caption = "Fuente: Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)") +
+  theme_void() 
+```
+
+
+
+
+
+
+#INDICE SINTETICO NIVEL SOCIOECONÓMICO 
+
+```{r, warning=FALSE}
+#Cargar Datos CODIGOS POSTALES Distrito
+
+isnse_mapa <- st_read("MAPS/INDICE_SINTETICO_NIVEL_SOCIOECONOMICO/ISNSE.shp") %>% 
+  filter(PROV == "CO")
+levels(as.factor(isnse_mapa$PROV))
+
+#se genera un número del 1 al 100 en una nueva columna
+isnse_mapa$DATO <- sample(100, size = nrow(isnse_mapa), replace = TRUE)
+
+
+cartography::choroLayer(isnse_mapa, var = "PARO", legend.title.txt = "Tasa de incidencia x 100.000 hab", legend.pos = "bottomright", method = "fisher-jenks", nclass = 5, legend.title.cex = 0.6, legend.values.cex = 0.5,   legend.values.rnd = 1, legend.nodata = "Sin casos", legend.horiz = TRUE, col = carto.pal(pal1 = "red.pal", n1 = 5))
+
+layoutLayer(title = "Distribución espacial PARO por INDICE SINTETICO NIVEL SOCIOECONÓMICO", tabtitle = TRUE, frame = TRUE, author = "Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)", sources = "Fuente: RedAlerta", north = TRUE, scale = FALSE)
+
+
+ggplot(isnse_mapa) +
+  geom_sf(aes(geometry = geometry, fill = PARO)) +
+  scale_fill_viridis(option = "magma", direction = -1, name = "Porcentaje de paro") +
+  labs(title = "Distribución espacial del paro por isnsel", subtitle = "Porcentaje por seccion censal", caption = "Fuente: Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)") +
+  theme_void() 
+```
+
+
+
+#SECCIONES CENSALES 
+
+```{r, warning=FALSE}
+#Cargar Datos CODIGOS POSTALES Distrito
+
+secciones_censales <- st_read("MAPS/SECCIONES_CENSALES/SECC_CPV_E_20111101_01_R_INE.shp") %>% 
+  filter(CPRO == "14") %>%
+  filter(CMUN == "021") 
+#  filter(CDIS == "09") 
+  
+  
+#levels(as.factor(secciones_censales$PROV))
+
+#se genera un número del 1 al 100 en una nueva columna
+secciones_censales$DATO <- sample(100, size = nrow(secciones_censales), replace = TRUE)
+
+
+cartography::choroLayer(secciones_censales, var = "DATO", legend.title.txt = "Tasa de incidencia x 100.000 hab", legend.pos = "bottomright", method = "fisher-jenks", nclass = 5, legend.title.cex = 0.6, legend.values.cex = 0.5,   legend.values.rnd = 1, legend.nodata = "Sin casos", legend.horiz = TRUE, col = carto.pal(pal1 = "red.pal", n1 = 5))
+
+layoutLayer(title = "Distribución espacial DATO POR SECCIONES CENSALES", tabtitle = TRUE, frame = TRUE, author = "Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)", sources = "Fuente: RedAlerta", north = TRUE, scale = FALSE)
+
+
+ggplot(secciones_censales) +
+  geom_sf(aes(geometry = geometry, fill = DATO)) +
+  scale_fill_viridis(option = "magma", direction = -1, name = "Porcentaje de DATO") +
+  labs(title = "Distribución espacial del DATO POR SSCC", subtitle = "Porcentaje por seccion censal", caption = "Fuente: Sistema de Vigilancia Epidemiológica de Andalucía (SVEA)") +
+  theme_void() 
+```
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+---
+title: "HELICS-WINNET"
+author: "Rafael Ruiz Montero"
+date: "13/4/2022"
+output: html_document
+      toc: true
+      toc_depth: 2
+      number_sections: true
+      theme: paper
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(janitor)
+library(Hmisc)
+library(knitr)
+
+archivos <- mdb.get(file = "DATA/HelicsWinNetSSI_export_20230301_110133.mdb")
+tbl_hai <- archivos$tbl_hai %>% as.tibble()
+tbl_hai_res  <- archivos$tbl_hai_res %>% as.tibble()
+tbl_hosp <- archivos$tbl_hosp %>% as.tibble()
+tbl_hosp_data <- archivos$tbl_hosp_data %>% as.tibble()
+tbl_hosp_indicator_data <- archivos$tbl_hosp_indicator_data %>% as.tibble()
+tbl_op <- archivos$tbl_op %>% as.tibble()
+tbl_pats <- archivos$tbl_pats %>% as.tibble()
+tbl_ward <- archivos$tbl_ward %>% as.tibble()
+tbl_ward_deno <- archivos$tbl_ward_deno %>% as.tibble()
+
+saveRDS(tbl_hai, "EXPORT/tbl_hai.rds")
+saveRDS(tbl_hai_res , "EXPORT/tbl_hai_res.rds")
+saveRDS(tbl_hosp, "EXPORT/tbl_hosp.rds")
+saveRDS(tbl_hosp_data, "EXPORT/tbl_hosp_data.rds")
+saveRDS(tbl_hosp_indicator_data, "EXPORT/tbl_hosp_indicator_data.rds")
+saveRDS(tbl_op, "EXPORT/tbl_op.rds")
+saveRDS(tbl_pats, "EXPORT/tbl_pats.rds")
+saveRDS(tbl_ward, "EXPORT/tbl_ward.rds")
+saveRDS(tbl_ward_deno, "EXPORT/tbl_ward_deno.rds")
+
+# cambiar los nombres a las variables que han sido recodificadas en HELICS Winnet
+
+```
+
