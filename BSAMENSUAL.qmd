@@ -1,0 +1,375 @@
+---
+title: "Informe microbiológico mensual"
+author: "Juan José López Moyano"
+date: "`r Sys.Date()`"
+format:
+output:
+  word_document:
+    reference_docx: styles.docx
+table:
+  style: simple
+  column_widths: [20, 20, 20]
+always_allow_html: true
+editor: visual
+
+---
+
+```{r}
+#| warning: false
+#| echo: false
+
+library(tidyverse)
+library(quarto)
+library(rmarkdown)
+library(pander)
+library(rio)
+library(flextable)
+library(officer)
+library(lubridate)
+library(DT)
+library(knitr)
+library(stringr)
+library(summarytools)
+library(surveillance)
+library(scales)
+library(sf)
+library(viridis)
+library(data.table)
+library(janitor)
+
+
+db2022 <- import("DATA/DBBSA2022.xlsx") %>% clean_names() %>% 
+  mutate(año = year(fecha)) %>% 
+  mutate(mes = month((fecha)))
+
+db2022$id_micro  <- as.numeric(db2022$id_micro)
+db2022$id_bacterias_2 <- as.character(db2022$id_bacterias_2)
+db2022$ufc_bacterias_2 <- as.numeric(db2022$ufc_bacterias_2)
+db2022$fecha <- as.Date(db2022$fecha)
+
+## creamos duplicado para bacterias y hontos.
+### BACTERIAS
+db2022bact <- db2022
+db2022bact$tipo <- "Bacterias" 
+db2022bact <- db2022bact %>% 
+  select(unidad, numero, zona, fecha, id_micro, bacterias, ufc_bacterias_1, id_bacterias_1, ufc_bacterias_2, id_bacterias_2, mes, tipo, año) %>% 
+  rename(Resultado = bacterias) 
+
+db2022bact <- replace(db2022bact, is.na(db2022bact), "")
+db2022bact$Identificación <- paste(db2022bact$ufc_bacterias_1, db2022bact$id_bacterias_1, db2022bact$ufc_bacterias_2, db2022bact$id_bacterias_2, sep =  " ")
+db2022bact$Localización <- paste(db2022bact$numero, db2022bact$tipo, sep =  " ")
+
+
+
+db2022bact <- db2022bact %>% 
+  select(Localización,id_micro, fecha, Resultado, Identificación, zona, mes, unidad)
+
+### HONGOS
+db2022hong <- db2022
+db2022hong$tipo <- "Hongos" 
+db2022hong <- db2022hong %>% 
+  select(unidad, numero, zona, fecha, id_micro, hongos, ufc_hongos_1, id_hongos_1, ufc_hongos_2, id_hongos_2, mes, tipo, año) %>% 
+  rename(Resultado = hongos) 
+
+db2022hong <- replace(db2022hong, is.na(db2022hong), "")
+db2022hong$Identificación <- paste(db2022hong$ufc_hongos_1, db2022hong$id_hongos_1, db2022hong$ufc_hongos_2, db2022hong$id_hongos_2, sep =  " ")
+db2022hong$Localización <- paste(db2022hong$numero, db2022hong$tipo, sep =  " ")
+
+db2022hong <- db2022hong %>% 
+  select(Localización, id_micro, fecha, Resultado, Identificación, zona, mes, unidad)
+
+
+dbfinal2022 <- rbind(db2022bact, db2022hong) 
+
+dbfinal2022 <- dbfinal2022 %>%
+  rename(ID_Micro = id_micro, Fecha = fecha) 
+
+dbfinal2022 <- dbfinal2022 %>% 
+  filter(mes == 1)
+
+dbfinal2022 <- dbfinal2022 %>% 
+  mutate(mes = case_when(
+    mes == 1 ~ "Enero",
+    mes == 2 ~ "Febrero",
+    mes == 3 ~ "Marzo",
+    mes == 4 ~ "Abril",
+    mes == 5 ~ "Mayo",
+    mes == 6 ~ "Junio",
+    mes == 7 ~ "Julio",
+    mes == 8 ~ "Agosto",
+    mes == 9 ~ "Septiembre",
+    mes == 10 ~ "Octubre",
+    mes == 11 ~ "Noviembre",
+    mes == 12 ~ "Diciembre"
+  ))
+
+
+zonames <- split(dbfinal2022, list(dbfinal2022$zona, dbfinal2022$mes))
+
+zonamesfinal <- list()
+
+for (nombre_subconjunto in names(zonames)) {
+  zonamesfinal[[nombre_subconjunto]] <- zonames[[nombre_subconjunto]] %>%
+    select(Localización, ID_Micro, Fecha, Resultado, Identificación) %>%
+    arrange(Localización)
+}
+
+### PARA FIRMAR:
+firmas <- data.frame(
+  Nombre = c("Fea Medicina Preventiva"),
+  Nombre2 = c("Jefa de servicio de Medicina Preventiva")
+) %>% 
+  setNames(c("Rocío Ortiz Gonzalez-Serna", "Inmaculada Salcedo Leal"))
+
+
+# for (nombre_subconjunto in names(zonames)) {
+#   assign(nombre_subconjunto, zonames[[nombre_subconjunto]] %>%
+#   select(Localización, ID_Micro, Fecha, Resultado, Identificación)%>%
+#     arrange(Localización))
+# }
+```
+\pagebreak
+
+
+#  `r unique(zonames[[1]]$unidad)`
+## `r unique(zonames[[1]]$zona)`
+`r unique(dbfinal2022$mes)` `r unique(year(dbfinal2022$Fecha))`
+```{r}
+#| echo: false
+
+p1 <- flextable(zonamesfinal[[1]]) %>%
+  set_table_properties(width = .9) %>%
+  width(j = "Localización", width = 1.8) %>%
+  width(j = "ID_Micro", width = 0.8) %>%
+  width(j = "Fecha", width = 1) %>% 
+  width(j = "Resultado", width = .9) %>% 
+  width(j = "Identificación", width = 2.3) 
+
+ft_1 <- bg(p1, bg = "#F59A3A", part = "header")
+
+ft_1 <- ft_1 %>% 
+  bg(, i = ~ grepl("Bacterias", Localización), bg = "#F9D4B7") %>% 
+  bg(i = ~ grepl("Hongos", Localización), bg = "#FFC685")
+
+
+ft_1
+
+
+```
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">RESULTADO:</span>**
+
+Resultado conforme. Ausencia de flora fúngica y presencia de flora bacteriana dentro de rango admisible
+
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">Firman:</span>**
+```{r}
+#| echo: false
+flextable(firmas) %>% 
+  set_table_properties(width = .9) %>% 
+  width(j = "Rocío Ortiz Gonzalez-Serna", width = 3) %>%
+  width(j = "Inmaculada Salcedo Leal", width = 3)  %>%
+  border_remove()
+
+
+```
+
+
+
+
+
+\pagebreak
+
+#  `r unique(zonames[[2]]$unidad)`
+## `r unique(zonames[[2]]$zona)`
+`r unique(dbfinal2022$mes)` `r unique(year(dbfinal2022$Fecha))`
+```{r}
+#| echo: false
+
+p1 <- flextable(zonamesfinal[[2]]) %>%
+  set_table_properties(width = .9) %>%
+  width(j = "Localización", width = 1.8) %>%
+  width(j = "ID_Micro", width = 0.8) %>%
+  width(j = "Fecha", width = 1) %>% 
+  width(j = "Resultado", width = .9) %>% 
+  width(j = "Identificación", width = 2.3)
+
+ft_1 <- bg(p1, bg = "#F59A3A", part = "header")
+
+ft_1 <- ft_1 %>% 
+  bg(, i = ~ grepl("Bacterias", Localización), bg = "#F9D4B7") %>% 
+  bg(i = ~ grepl("Hongos", Localización), bg = "#FFC685")
+
+ft_1
+```
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">RESULTADO:</span>**
+
+Resultado conforme. Ausencia de flora fúngica y presencia de flora bacteriana dentro de rango admisible
+
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">Firman:</span>**
+```{r}
+#| echo: false
+flextable(firmas) %>% 
+  set_table_properties(width = .9) %>% 
+  width(j = "Rocío Ortiz Gonzalez-Serna", width = 3) %>%
+  width(j = "Inmaculada Salcedo Leal", width = 3) 
+  
+
+```
+
+\pagebreak
+
+
+#  `r unique(zonames[[3]]$unidad)`
+## `r unique(zonames[[3]]$zona)`
+`r unique(dbfinal2022$mes)` `r unique(year(dbfinal2022$Fecha))`
+```{r}
+#| echo: false
+
+p1 <- flextable(zonamesfinal[[3]]) %>%
+  set_table_properties(width = .9) %>%
+  width(j = "Localización", width = 1.8) %>%
+  width(j = "ID_Micro", width = 0.8) %>%
+  width(j = "Fecha", width = 1) %>% 
+  width(j = "Resultado", width = .9) %>% 
+  width(j = "Identificación", width = 2.3) 
+
+ft_1 <- bg(p1, bg = "#F59A3A", part = "header")
+
+ft_1 <- ft_1 %>% 
+  bg(, i = ~ grepl("Bacterias", Localización), bg = "#F9D4B7") %>% 
+  bg(i = ~ grepl("Hongos", Localización), bg = "#FFC685")
+
+
+ft_1
+```
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">RESULTADO:</span>**
+
+Resultado conforme. Ausencia de flora fúngica y presencia de flora bacteriana dentro de rango admisible
+
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">Firman:</span>**
+```{r}
+#| echo: false
+flextable(firmas) %>% 
+  set_table_properties(width = .9) %>% 
+  width(j = "Rocío Ortiz Gonzalez-Serna", width = 3) %>%
+  width(j = "Inmaculada Salcedo Leal", width = 3) 
+  
+
+```
+
+\pagebreak
+
+
+
+#  `r unique(zonames[[4]]$unidad)`
+## `r unique(zonames[[4]]$zona)`
+`r unique(dbfinal2022$mes)` `r unique(year(dbfinal2022$Fecha))`
+```{r}
+#| echo: false
+
+p1 <- flextable(zonamesfinal[[4]]) %>%
+  set_table_properties(width = .9) %>%
+  width(j = "Localización", width = 1.8) %>%
+  width(j = "ID_Micro", width = 0.8) %>%
+  width(j = "Fecha", width = 1) %>% 
+  width(j = "Resultado", width = .9) %>% 
+  width(j = "Identificación", width = 2.3) 
+
+ft_1 <- bg(p1, bg = "#F59A3A", part = "header")
+
+ft_1 <- ft_1 %>% 
+  bg(, i = ~ grepl("Bacterias", Localización), bg = "#F9D4B7") %>% 
+  bg(i = ~ grepl("Hongos", Localización), bg = "#FFC685")
+
+
+ft_1 
+```
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">RESULTADO:</span>**
+
+Resultado conforme. Ausencia de flora fúngica y presencia de flora bacteriana dentro de rango admisible
+
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">Firman:</span>**
+```{r}
+#| echo: false
+flextable(firmas) %>% 
+  set_table_properties(width = .9) %>% 
+  width(j = "Rocío Ortiz Gonzalez-Serna", width = 3) %>%
+  width(j = "Inmaculada Salcedo Leal", width = 3) 
+  
+
+```
+
+\pagebreak
+
+
+
+#  `r unique(zonames[[5]]$unidad)`
+## `r unique(zonames[[5]]$zona)`
+`r unique(dbfinal2022$mes)` `r unique(year(dbfinal2022$Fecha))`
+```{r}
+#| echo: false
+
+p1 <- flextable(zonamesfinal[[5]]) %>%
+  set_table_properties(width = .9) %>%
+  width(j = "Localización", width = 1.8) %>%
+  width(j = "ID_Micro", width = 0.8) %>%
+  width(j = "Fecha", width = 1) %>% 
+  width(j = "Resultado", width = .9) %>% 
+  width(j = "Identificación", width = 2.3) 
+
+ft_1 <- bg(p1, bg = "#F59A3A", part = "header")
+
+ft_1 <- ft_1 %>% 
+  bg(, i = ~ grepl("Bacterias", Localización), bg = "#F9D4B7") %>% 
+  bg(i = ~ grepl("Hongos", Localización), bg = "#FFC685")
+
+
+ft_1
+```
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">RESULTADO:</span>**
+
+Resultado conforme. Ausencia de flora fúngica y presencia de flora bacteriana dentro de rango admisible
+
+
+\
+
+**<span style="font-size: 14pt; font-family: Arial;">Firman:</span>**
+```{r}
+#| echo: false
+flextable(firmas) %>% 
+  set_table_properties(width = .9) %>% 
+  width(j = "Rocío Ortiz Gonzalez-Serna", width = 3) %>%
+  width(j = "Inmaculada Salcedo Leal", width = 3) 
+  
+
+```
+
+
+
+

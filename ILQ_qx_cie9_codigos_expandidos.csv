@@ -1,0 +1,712 @@
+n;nhsn_code;procedimiento_qx;descripcion;cie9
+1;AAA;Reparación de aneurisma de aorta abdominal;Resección de la aorta abdominal con anastomosis o reemplazo de lamisma;38.34
+2;AAA;Reparación de aneurisma de aorta abdominal;Resección de la aorta abdominal con anastomosis o reemplazo de lamisma;38.44
+3;AAA;Reparación de aneurisma de aorta abdominal;Resección de la aorta abdominal con anastomosis o reemplazo de lamisma;38.64
+4;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.00
+5;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.01
+6;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.02
+7;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.03
+8;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.04
+9;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.05
+10;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.06
+11;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.07
+12;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.08
+13;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.09
+14;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.10
+15;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.11
+16;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.12
+17;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.13
+18;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.14
+19;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.15
+20;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.16
+21;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.17
+22;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.18
+23;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.19
+24;AMP;Amputación de extremidad;Amputación o desarticulación total o parcial de una extremidad superior o inferior, incluyendo los dedos;84.91
+25;APPY;Apendicectomía;Extirpación del apéndice (no incidental en otroprocedimiento quirúrgico);47.01
+26;APPY;Apendicectomía;Extirpación del apéndice (no incidental en otroprocedimiento quirúrgico);47.09
+27;APPY;Apendicectomía;Extirpación del apéndice (no incidental en otroprocedimiento quirúrgico);47.2
+28;APPY;Apendicectomía;Extirpación del apéndice (no incidental en otroprocedimiento quirúrgico);47.91
+29;APPY;Apendicectomía;Extirpación del apéndice (no incidental en otroprocedimiento quirúrgico);47.92
+30;APPY;Apendicectomía;Extirpación del apéndice (no incidental en otroprocedimiento quirúrgico);47.99
+31;AVSD;Fístula para diálisis renal;Arteriovenostomía para diálisis renal;39.27
+32;AVSD;Fístula para diálisis renal;Arteriovenostomía para diálisis renal;39.42
+33;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.0
+34;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.12
+35;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.14
+36;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.21
+37;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.22
+38;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.23
+39;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.25
+40;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.26
+41;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.29
+42;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.3
+43;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.4
+44;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.61
+45;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);50.69
+46;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.31
+47;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.32
+48;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.33
+49;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.34
+50;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.35
+51;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.36
+52;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.37
+53;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.39
+54;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.41
+55;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.42
+56;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.43
+57;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.49
+58;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.51
+59;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.59
+60;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.61
+61;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.62
+62;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.63
+63;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.69
+64;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.71
+65;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.72
+66;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.79
+67;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.81
+68;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.82
+69;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.83
+70;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.89
+71;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.91
+72;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.92
+73;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.93
+74;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.94
+75;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.95
+76;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);51.99
+77;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.09
+78;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.12
+79;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.22
+80;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.3
+81;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.4
+82;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.51
+83;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.52
+84;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.53
+85;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.59
+86;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.6
+87;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.7
+88;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.92
+89;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.95
+90;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.96
+91;BILI;Cirugía de vías biliares, hígado o páncreas;Escisión de las vías biliares o intervenciones en conductos biliares, hígado o páncreas (no incluye intervenciones sobre la vesícula biliar únicamente, p.e.: colecistectomía);52.99
+92;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.12
+93;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.20
+94;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.21
+95;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.22
+96;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.23
+97;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.31
+98;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.32
+99;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.33
+100;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.34
+101;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.35
+102;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.36
+103;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.41
+104;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.42
+105;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.43
+106;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.44
+107;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.45
+108;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.46
+109;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.47
+110;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.48
+111;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.50
+112;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.53
+113;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.54
+114;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.6
+115;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.70
+116;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.71
+117;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.72
+118;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.73
+119;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.74
+120;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.75
+121;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.76
+122;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.79
+123;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.93
+124;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.94
+125;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.95
+126;BRST;Operaciones sobre la mama;Escisión de lesiones o tejido mamario incluyendo la resección radical, modificada o de cuadrantes, lumpectomía, biopsia abierta, o mamoplastia.;85.96
+127;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.00
+128;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.01
+129;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.02
+130;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.03
+131;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.04
+132;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.10
+133;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.11
+134;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.12
+135;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.13
+136;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.14
+137;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.20
+138;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.21
+139;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.22
+140;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.23
+141;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.24
+142;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.25
+143;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.26
+144;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.27
+145;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.28
+146;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.31
+147;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.32
+148;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.33
+149;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.34
+150;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.35
+151;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.39
+152;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.42
+153;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.50
+154;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.51
+155;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.53
+156;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.54
+157;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.60
+158;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.61
+159;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.62
+160;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.63
+161;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.70
+162;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.71
+163;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.72
+164;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.73
+165;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.81
+166;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.82
+167;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.83
+168;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.84
+169;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.91
+170;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.92
+171;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.93
+172;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.94
+173;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.95
+174;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.98
+175;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;35.99
+176;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.10
+177;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.11
+178;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.24
+179;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.31
+180;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.32
+181;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.33
+182;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.35
+183;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.36
+184;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.41
+185;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.49
+186;CARD;Cirugía cardiaca;Procedimientos en las válvulas o septo del corazón. No incluye el injerto de “bypass” de arteria coronaria, la cirugía de los grandes vasos, trasplante cardiaco, o la implantación de marcapasos;37.60
+187;CEA;Endarterectomía carotidea;Endarterectomía de los vasos de la cabeza y cuello (incluye la arteriacarótida y la vena yugular);38.12
+188;CBGB;Injerto de “bypass” de arteria coronaria con incisiones en el tórax y en el lugar de donación del injerto;"Cirugía torácica para realizar revascularización directa del corazón; incluye la obtención del injerto venoso del lugar de donación";36.10
+189;CBGB;Injerto de “bypass” de arteria coronaria con incisiones en el tórax y en el lugar de donación del injerto;"Cirugía torácica para realizar revascularización directa del corazón; incluye la obtención del injerto venoso del lugar de donación";36.11
+190;CBGB;Injerto de “bypass” de arteria coronaria con incisiones en el tórax y en el lugar de donación del injerto;"Cirugía torácica para realizar revascularización directa del corazón; incluye la obtención del injerto venoso del lugar de donación";36.12
+191;CBGB;Injerto de “bypass” de arteria coronaria con incisiones en el tórax y en el lugar de donación del injerto;"Cirugía torácica para realizar revascularización directa del corazón; incluye la obtención del injerto venoso del lugar de donación";36.13
+192;CBGB;Injerto de “bypass” de arteria coronaria con incisiones en el tórax y en el lugar de donación del injerto;"Cirugía torácica para realizar revascularización directa del corazón; incluye la obtención del injerto venoso del lugar de donación";36.14
+193;CBGB;Injerto de “bypass” de arteria coronaria con incisiones en el tórax y en el lugar de donación del injerto;"Cirugía torácica para realizar revascularización directa del corazón; incluye la obtención del injerto venoso del lugar de donación";36.19
+194;CBGC;Injerto de “bypass” de arteria coronaria con incisión sólo en el tórax;Cirugía torácica para realizar revascularización directa del corazón usando, por ejemplo, la arteria mamaria interna;36.15
+195;CBGC;Injerto de “bypass” de arteria coronaria con incisión sólo en el tórax;Cirugía torácica para realizar revascularización directa del corazón usando, por ejemplo, la arteria mamaria interna;36.16
+196;CBGC;Injerto de “bypass” de arteria coronaria con incisión sólo en el tórax;Cirugía torácica para realizar revascularización directa del corazón usando, por ejemplo, la arteria mamaria interna;36.17
+197;CBGC;Injerto de “bypass” de arteria coronaria con incisión sólo en el tórax;Cirugía torácica para realizar revascularización directa del corazón usando, por ejemplo, la arteria mamaria interna;36.2
+198;CHOL;Cirugía de la vesícula biliar;Colecistectomía y colecistotomía;51.03
+199;CHOL;Cirugía de la vesícula biliar;Colecistectomía y colecistotomía;51.04
+200;CHOL;Cirugía de la vesícula biliar;Colecistectomía y colecistotomía;51.13
+201;CHOL;Cirugía de la vesícula biliar;Colecistectomía y colecistotomía;51.21
+202;CHOL;Cirugía de la vesícula biliar;Colecistectomía y colecistotomía;51.22
+203;CHOL;Cirugía de la vesícula biliar;Colecistectomía y colecistotomía;51.23
+204;CHOL;Cirugía de la vesícula biliar;Colecistectomía y colecistotomía;51.24
+205;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";17.31
+206;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";17.32
+207;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";17.33
+208;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";17.34
+209;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";17.35
+210;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";17.36
+211;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";17.39
+212;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.03
+213;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.26
+214;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.41
+215;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.49
+216;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.52
+217;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.71
+218;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.72
+219;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.73
+220;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.74
+221;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.75
+222;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.76
+223;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.79
+224;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.81
+225;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.82
+226;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.83
+227;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.92
+228;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.93
+229;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.94
+230;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";45.95
+231;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.03
+232;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.04
+233;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.10
+234;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.11
+235;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.13
+236;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.14
+237;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.43
+238;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.52
+239;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.75
+240;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.76
+241;COLO;Cirugía del colon;"Incisión, resección, o anastomosis del intestino grueso; incluye anastomosis entre el intestino delgado y grueso. No se incluye la cirugía rectal";46.94
+242;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.12
+243;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.14
+244;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.21
+245;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.22
+246;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.23
+247;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.24
+248;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.25
+249;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.28
+250;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.31
+251;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.32
+252;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.39
+253;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.41
+254;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.42
+255;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.51
+256;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.52
+257;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.53
+258;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;01.59
+259;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;02.11
+260;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;02.12
+261;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;02.13
+262;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;02.14
+263;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;02.91
+264;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;02.92
+265;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;02.93
+266;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.51
+267;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.52
+268;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.53
+269;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.54
+270;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.59
+271;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.61
+272;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.62
+273;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.63
+274;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.64
+275;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.65
+276;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.68
+277;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.69
+278;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.71
+279;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.72
+280;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;07.79
+281;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;38.01
+282;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;38.11
+283;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;38.31
+284;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;38.41
+285;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;38.51
+286;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;38.61
+287;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;38.81
+288;CRAN;Craneotomía;Incisión a través del cráneo para extirpar, reparar o explorar el cerebro. No incluye la colocación de válvulas de derivación de líquido;39.28
+289;CSEC;Cesárea;Parto por cesárea;74.0
+290;CSEC;Cesárea;Parto por cesárea;74.1
+291;CSEC;Cesárea;Parto por cesárea;74.2
+292;CSEC;Cesárea;Parto por cesárea;74.4
+293;CSEC;Cesárea;Parto por cesárea;74.91
+294;CSEC;Cesárea;Parto por cesárea;74.99
+295;FUSN;Fusión vertebral;Inmovilización de la columna vertebral;81.00
+296;FUSN;Fusión vertebral;Inmovilización de la columna vertebral;81.01
+297;FUSN;Fusión vertebral;Inmovilización de la columna vertebral;81.02
+298;FUSN;Fusión vertebral;Inmovilización de la columna vertebral;81.03
+299;FUSN;Fusión vertebral;Inmovilización de la columna vertebral;81.04
+300;FUSN;Fusión vertebral;Inmovilización de la columna vertebral;81.05
+301;FUSN;Fusión vertebral;Inmovilización de la columna vertebral;81.06
+302;FUSN;Fusión vertebral;Inmovilización de la columna vertebral;81.07
+303;FUSN;Fusión vertebral;Inmovilización de la columna vertebral;81.08
+304;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.21
+305;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.22
+306;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.25
+307;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.26
+308;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.31
+309;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.32
+310;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.35
+311;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.36
+312;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.51
+313;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.52
+314;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.55
+315;FX;Reducción abierta de fractura;"Reducción abierta de fractura o dislocación de los huesos largos que requiere fijación interna o externa; no incluye la colocación conjunta de prótesis";79.56
+316;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.0
+317;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.42
+318;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.49
+319;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.5
+320;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.6
+321;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.7
+322;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.81
+323;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.89
+324;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.91
+325;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";43.99
+326;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.15
+327;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.21
+328;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.29
+329;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.31
+330;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.38
+331;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.39
+332;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.40
+333;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.41
+334;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.42
+335;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.49
+336;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.5
+337;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.61
+338;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.62
+339;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.63
+340;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.64
+341;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.65
+342;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.68
+343;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.69
+344;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.95
+345;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.96
+346;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.97
+347;GAST;Cirugía gástrica;"Incisión o escisión del estómago; incluye la gastrectomía subtotal o total.No incluye la vagotomía y la funduplicatura";44.98
+348;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;17.11
+349;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;17.12
+350;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;17.13
+351;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;17.21
+352;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;17.22
+353;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;17.23
+354;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;17.24
+355;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.00
+356;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.01
+357;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.02
+358;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.03
+359;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.04
+360;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.05
+361;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.10
+362;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.11
+363;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.12
+364;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.13
+365;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.14
+366;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.15
+367;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.16
+368;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.17
+369;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.21
+370;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.29
+371;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.31
+372;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.39
+373;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.41
+374;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.42
+375;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.43
+376;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.49
+377;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.51
+378;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.59
+379;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.61
+380;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.62
+381;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.63
+382;HER;Herniorrafia;Reparación de hernia inguinal, femoral, umbilical o de la pared abdominal anterior. No incluye la reparación de hernia diafragmática o hiatal, o hernias de otralocalización;53.69
+383;HPRO;Prótesis de cadera;Artroplastia de cadera;00.70
+384;HPRO;Prótesis de cadera;Artroplastia de cadera;00.71
+385;HPRO;Prótesis de cadera;Artroplastia de cadera;00.72
+386;HPRO;Prótesis de cadera;Artroplastia de cadera;00.73
+387;HPRO;Prótesis de cadera;Artroplastia de cadera;00.85
+388;HPRO;Prótesis de cadera;Artroplastia de cadera;00.86
+389;HPRO;Prótesis de cadera;Artroplastia de cadera;00.87
+390;HPRO;Prótesis de cadera;Artroplastia de cadera;81.51
+391;HPRO;Prótesis de cadera;Artroplastia de cadera;81.52
+392;HPRO;Prótesis de cadera;Artroplastia de cadera;81.53
+393;HTP;Trasplante cardiaco;Trasplante del corazón;37.51
+394;HTP;Trasplante cardiaco;Trasplante del corazón;37.52
+395;HTP;Trasplante cardiaco;Trasplante del corazón;37.53
+396;HTP;Trasplante cardiaco;Trasplante del corazón;37.54
+397;HTP;Trasplante cardiaco;Trasplante del corazón;37.55
+398;HYST;Histerectomía abdominal;Extirpación del útero a través de una incisiónabdominal;68.31
+399;HYST;Histerectomía abdominal;Extirpación del útero a través de una incisiónabdominal;68.39
+400;HYST;Histerectomía abdominal;Extirpación del útero a través de una incisiónabdominal;68.41
+401;HYST;Histerectomía abdominal;Extirpación del útero a través de una incisiónabdominal;68.49
+402;HYST;Histerectomía abdominal;Extirpación del útero a través de una incisiónabdominal;68.61
+403;HYST;Histerectomía abdominal;Extirpación del útero a través de una incisiónabdominal;68.69
+404;KPRO;Prótesis de rodilla;Artroplastia de rodilla;00.80
+405;KPRO;Prótesis de rodilla;Artroplastia de rodilla;00.81
+406;KPRO;Prótesis de rodilla;Artroplastia de rodilla;00.82
+407;KPRO;Prótesis de rodilla;Artroplastia de rodilla;00.83
+408;KPRO;Prótesis de rodilla;Artroplastia de rodilla;00.84
+409;KPRO;Prótesis de rodilla;Artroplastia de rodilla;81.54
+410;KPRO;Prótesis de rodilla;Artroplastia de rodilla;81.55
+411;KTP;Trasplante renal;Trasplante de riñón;55.61
+412;KTP;Trasplante renal;Trasplante de riñón;55.69
+413;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;03.01
+414;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;03.02
+415;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;03.09
+416;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;80.50
+417;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;80.51
+418;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;80.53
+419;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;80.54
+420;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;80.59
+421;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.60
+422;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.61
+423;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.62
+424;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.63
+425;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.64
+426;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.65
+427;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.66
+428;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.67
+429;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.68
+430;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.69
+431;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.80
+432;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.81
+433;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.82
+434;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.83
+435;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.84
+436;LAM;Laminectomía;Exploración o descompresión de la columna vertebral mediante la escisión o la incisión en las vértebras;84.85
+437;LTP;Trasplante hepático;Trasplante de hígado;50.51
+438;LTP;Trasplante hepático;Trasplante de hígado;50.59
+439;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;30.1
+440;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;30.21
+441;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;30.22
+442;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;30.29
+443;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;30.3
+444;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;30.4
+445;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;31.45
+446;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;40.40
+447;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;40.41
+448;NECK;Cirugía del cuello;Escisión mayor o incisión de la laringe y disección radical del cuello. No incluye cirugía del tiroides o paratiroides;40.42
+449;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.01
+450;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.02
+451;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.11
+452;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.12
+453;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.24
+454;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.31
+455;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.32
+456;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.34
+457;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.35
+458;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.39
+459;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.4
+460;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.51
+461;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.52
+462;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.54
+463;NEPH;Cirugía renal;Resección o manipulación del riñón con o sin extirpación de estructuras relacionadas;55.91
+464;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.01
+465;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.09
+466;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.12
+467;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.13
+468;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.21
+469;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.22
+470;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.23
+471;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.24
+472;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.25
+473;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.29
+474;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.31
+475;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.39
+476;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.41
+477;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.49
+478;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.51
+479;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.52
+480;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.53
+481;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.54
+482;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.71
+483;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.72
+484;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.73
+485;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.74
+486;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.75
+487;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.76
+488;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.79
+489;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.81
+490;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.89
+491;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.92
+492;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.93
+493;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.94
+494;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.95
+495;OVRY;Cirugía ovárica;Operaciones sobre los ovarios y estructuras relacionadas;65.99
+496;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;00.50
+497;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;00.51
+498;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;00.52
+499;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;00.53
+500;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;00.54
+501;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;17.51
+502;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;17.52
+503;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.70
+504;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.71
+505;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.72
+506;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.73
+507;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.74
+508;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.75
+509;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.76
+510;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.77
+511;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.79
+512;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.80
+513;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.81
+514;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.82
+515;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.83
+516;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.85
+517;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.86
+518;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.87
+519;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.89
+520;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.94
+521;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.95
+522;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.96
+523;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.97
+524;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.98
+525;PACE;Cirugía de marcapasos;Inserción, manipulación o recambio de marcapasos;37.99
+526;PRST;Cirugía prostática;Escisión prostática suprapúbica, retropúbica, radical o perineal. No incluye la reseccióntransuretral;60.12
+527;PRST;Cirugía prostática;Escisión prostática suprapúbica, retropúbica, radical o perineal. No incluye la reseccióntransuretral;60.3
+528;PRST;Cirugía prostática;Escisión prostática suprapúbica, retropúbica, radical o perineal. No incluye la reseccióntransuretral;60.4
+529;PRST;Cirugía prostática;Escisión prostática suprapúbica, retropúbica, radical o perineal. No incluye la reseccióntransuretral;60.5
+530;PRST;Cirugía prostática;Escisión prostática suprapúbica, retropúbica, radical o perineal. No incluye la reseccióntransuretral;60.61
+531;PRST;Cirugía prostática;Escisión prostática suprapúbica, retropúbica, radical o perineal. No incluye la reseccióntransuretral;60.62
+532;PRST;Cirugía prostática;Escisión prostática suprapúbica, retropúbica, radical o perineal. No incluye la reseccióntransuretral;60.69
+533;PVBY;Cirugía arterial periférica de “bypass”;Intervenciones de “bypass” en arterias periféricas;39.29
+534;REC;Cirugía rectal;Operaciones sobre el recto;48.25
+535;REC;Cirugía rectal;Operaciones sobre el recto;48.35
+536;REC;Cirugía rectal;Operaciones sobre el recto;48.40
+537;REC;Cirugía rectal;Operaciones sobre el recto;48.42
+538;REC;Cirugía rectal;Operaciones sobre el recto;48.43
+539;REC;Cirugía rectal;Operaciones sobre el recto;48.49
+540;REC;Cirugía rectal;Operaciones sobre el recto;48.50
+541;REC;Cirugía rectal;Operaciones sobre el recto;48.51
+542;REC;Cirugía rectal;Operaciones sobre el recto;48.52
+543;REC;Cirugía rectal;Operaciones sobre el recto;48.59
+544;REC;Cirugía rectal;Operaciones sobre el recto;48.61
+545;REC;Cirugía rectal;Operaciones sobre el recto;48.62
+546;REC;Cirugía rectal;Operaciones sobre el recto;48.63
+547;REC;Cirugía rectal;Operaciones sobre el recto;48.64
+548;REC;Cirugía rectal;Operaciones sobre el recto;48.65
+549;REC;Cirugía rectal;Operaciones sobre el recto;48.69
+550;REC;Cirugía rectal;Operaciones sobre el recto;48.74
+551;RFUSN;Refusión vertebral;Fusión de vértebras;81.30
+552;RFUSN;Refusión vertebral;Fusión de vértebras;81.31
+553;RFUSN;Refusión vertebral;Fusión de vértebras;81.32
+554;RFUSN;Refusión vertebral;Fusión de vértebras;81.33
+555;RFUSN;Refusión vertebral;Fusión de vértebras;81.34
+556;RFUSN;Refusión vertebral;Fusión de vértebras;81.35
+557;RFUSN;Refusión vertebral;Fusión de vértebras;81.36
+558;RFUSN;Refusión vertebral;Fusión de vértebras;81.37
+559;RFUSN;Refusión vertebral;Fusión de vértebras;81.38
+560;RFUSN;Refusión vertebral;Fusión de vértebras;81.39
+561;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.01
+562;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.02
+563;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.15
+564;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.31
+565;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.32
+566;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.33
+567;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.34
+568;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.51
+569;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.61
+570;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.62
+571;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.63
+572;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;45.91
+573;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.01
+574;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.02
+575;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.20
+576;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.21
+577;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.22
+578;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.23
+579;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.24
+580;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.31
+581;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.39
+582;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.41
+583;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.51
+584;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.71
+585;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.72
+586;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.73
+587;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.74
+588;SB;Cirugía del intestino delgado;Incisión o resección del intestino delgado. No incluye la anastomosis entre intestino delgado y grueso;46.93
+589;SPLE;Cirugía esplénica;Resección o manipulación del bazo;41.2
+590;SPLE;Cirugía esplénica;Resección o manipulación del bazo;41.33
+591;SPLE;Cirugía esplénica;Resección o manipulación del bazo;41.41
+592;SPLE;Cirugía esplénica;Resección o manipulación del bazo;41.42
+593;SPLE;Cirugía esplénica;Resección o manipulación del bazo;41.43
+594;SPLE;Cirugía esplénica;Resección o manipulación del bazo;41.5
+595;SPLE;Cirugía esplénica;Resección o manipulación del bazo;41.93
+596;SPLE;Cirugía esplénica;Resección o manipulación del bazo;41.95
+597;SPLE;Cirugía esplénica;Resección o manipulación del bazo;41.99
+598;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.09
+599;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.1
+600;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.20
+601;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.21
+602;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.22
+603;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.23
+604;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.25
+605;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.26
+606;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.29
+607;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.30
+608;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.39
+609;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.41
+610;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.49
+611;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.50
+612;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.59
+613;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.6
+614;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";32.9
+615;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.0
+616;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.1
+617;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.20
+618;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.25
+619;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.28
+620;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.31
+621;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.32
+622;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.33
+623;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.34
+624;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.39
+625;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.41
+626;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.42
+627;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.43
+628;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.48
+629;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.49
+630;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.98
+631;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";33.99
+632;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.01
+633;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.02
+634;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.03
+635;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.06
+636;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.1
+637;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.20
+638;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.26
+639;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.3
+640;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.4
+641;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.51
+642;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.52
+643;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.59
+644;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.6
+645;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.81
+646;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.82
+647;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.83
+648;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.84
+649;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.85
+650;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.86
+651;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.89
+652;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.93
+653;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";34.99
+654;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";53.80
+655;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";53.81
+656;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";53.82
+657;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";53.83
+658;THOR;Cirugía torácica;"Cirugía torácica no cardíaca y no vascular; incluye neumectomía y reparación de hernia diafragmática o hiatal";53.84
+659;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.02
+660;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.09
+661;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.12
+662;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.2
+663;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.31
+664;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.39
+665;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.4
+666;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.50
+667;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.51
+668;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.52
+669;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.6
+670;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.7
+671;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.81
+672;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.89
+673;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.91
+674;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.92
+675;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.93
+676;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.94
+677;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.95
+678;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.98
+679;THYR;Cirugía tiroidea y paratiroidea;Resección o manipulación del tiroides y/o paratiroides;06.99
+680;VHYS;Histerectomía vaginal;Extirpación del útero a través de la vagina o de incisión en elperiné;68.51
+681;VHYS;Histerectomía vaginal;Extirpación del útero a través de la vagina o de incisión en elperiné;68.59
+682;VHYS;Histerectomía vaginal;Extirpación del útero a través de la vagina o de incisión en elperiné;68.71
+683;VHYS;Histerectomía vaginal;Extirpación del útero a través de la vagina o de incisión en elperiné;68.79
+684;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;02.2
+685;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;02.31
+686;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;02.32
+687;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;02.33
+688;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;02.34
+689;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;02.35
+690;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;02.39
+691;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;02.42
+692;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;02.43
+693;VSHN;Derivación (shunt) ventricular;Ventriculostomía e intervenciones de derivación o shunt ventricular, incluyendo la revisión y la retirada de la derivación;54.95
+694;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";53.71
+695;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";53.72
+696;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";53.75
+697;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.0
+698;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.11
+699;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.12
+700;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.19
+701;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.3
+702;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.4
+703;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.51
+704;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.59
+705;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.61
+706;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.63
+707;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.64
+708;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.71
+709;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.75
+710;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.92
+711;XLAP;Laparotomía exploratoria;"Operaciones abdominales que implican una incisión en la paredabdominal para acceder a la cavidad abdominal; procedimientos diagnósticos para acceder a la región abdominal";54.93
