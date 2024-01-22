@@ -1,0 +1,323 @@
+---
+title: "INDICADORES_PIRASOA_CUATRIMESTRALES_MMR"
+author: "UGC MPySP - Hospital Universitario Reina Sofía"
+date:  "`r format(Sys.time(), '%d/%m/%Y %X')`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    theme: paper
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+
+
+library(tidyverse)
+library(rio)
+library(janitor)
+library(DT)
+library(knitr)
+library(flextable)
+
+
+año <- 2023
+trimestre <- 4
+
+# --------------------------------------------------------------------------------------------------
+# CARGAR Y DEPURAR BASES DE DATOS
+declaraciones_iras_2023 <- import("\\\\10.73.18.159\\hurs\\Direccion Medica\\Medicina_Preventiva\\VIGILANCIA EPIDEMIOLÓGICA SVEA EDOS\\Eventos 2023\\Vigilancia EDOs año 2023.ods",
+                                  sheet = "IRAS_2023") %>%
+  clean_names() %>% 
+  select(nuhsa, id, fecha_declaracion, evento, forma_clinica, diagnostico, laboratorio_13, laboratorio_14, ambito)
+
+declaraciones_iras_2024 <- import("\\\\10.73.18.159\\hurs\\Direccion Medica\\Medicina_Preventiva\\VIGILANCIA EPIDEMIOLÓGICA SVEA EDOS\\Vigilancia EDOs año 2024.ods",
+                                  sheet = "IRAS_2024") %>%
+  clean_names() %>% 
+  select(nuhsa, id, fecha_declaracion, evento, forma_clinica, diagnostico, laboratorio_13, laboratorio_14, ambito)
+
+
+edos_iras <- rbind(declaraciones_iras_2023, declaraciones_iras_2024)
+
+edos_iras <- edos_iras %>% 
+  mutate(fecha_declaracion = as.Date(fecha_declaracion, format = "%d/%m/%y"))
+
+estancias <- import("DATA/ESTANCIAS_PIRASOA.xlsx") %>% 
+  clean_names()
+
+# --------------------------------------------------------------------------------------------------
+# CALCULANDO DIA INICIO-FIN DEL CUATRIMESTRE
+# Calcula el mes inicial del cuatrimestre
+mes_inicial <- (trimestre - 1) * 3 + 1
+
+# Calcula el primer día del cuatrimestre
+primer_dia_trimestre <- as.Date(paste(año, mes_inicial, 1, sep="-"))
+
+# Calcula el último mes del cuatrimestre
+ultimo_mes <- trimestre * 3
+
+# Calcula el último día del último mes del cuatrimestre
+ultimo_dia_trimestre <- ceiling_date(primer_dia_trimestre %m+% months(2), "month") - days(1)
+
+# --------------------------------------------------------------------------------------------------
+# FILTRAR BASE DE DATOS IRAS
+edos_iras <- edos_iras %>% 
+  filter(fecha_declaracion >= primer_dia_trimestre,
+         fecha_declaracion <= ultimo_dia_trimestre) %>% 
+  mutate(across(where(is.character), as.factor))
+
+estancias <- estancias %>% 
+  mutate(ano = as.character(ano),
+         cuatrimestre = as.character(cuatrimestre)) %>% 
+  filter(ano == año) %>% 
+  filter(cuatrimestre == as.character(trimestre)) %>% 
+  pull(estancias)
+
+
+
+
+
+-----------------------------------------------------
+# REPASAR POSIBLES VALORES 
+  edos_iras %>% summary()
+```
+
+Año: `r año`   
+Trimestre: `r trimestre`   
+Fecha inicio informe: `r format(primer_dia_trimestre, '%d/%m/%Y')`  
+Fecha fin informe: `r format(ultimo_dia_trimestre, '%d/%m/%Y')`
+
+Se valoran aquellas adquiridas en el centro. Fuente de información: RedAlerta.
+
+# IRASH069
+Densidad de incidencia de pacientes ingresados con S. aureus resistente a meticilina. Nº de pacientes ingresados con infección/colonización por SAMR*1000/días de estancias en el periodo
+```{r}
+num_pacientes <- edos_iras %>%
+  filter(evento == "IRAS por S. aureus meticilin resistente (MRSA) (85) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital") 
+
+num_pacientes %>% datatable()
+num_pacientes <- nrow(num_pacientes)
+
+tibble(
+  código_pirasoa = "IRASH069",
+  año = año,
+  trimestre = trimestre,
+  numerador = num_pacientes,
+  denominador = estancias,
+  indicador = round(((num_pacientes/estancias)* 1000),digits = 3)) %>% 
+  flextable() %>% 
+  theme_vanilla() %>% 
+  colformat_num(big.mark = "")
+```
+
+
+# IRASH070
+Densidad de incidencia de pacientes ingresados con Enterococcus resistente a vancomicina. 	Nº de pacientes ingresados con infección/colonización por Enterococcus resistente a vancomicina*1000/días de estancias en el periodo
+```{r}
+num_pacientes <- edos_iras %>%
+  filter(evento == "IRAS por otras enterobacterias multirresistentes (96) (E.D.O.)"|
+          evento == "IRAS por otros microorganismos reemergentes o inusuales (88) (E.D.O.)" ) %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital") %>%
+  filter(str_detect(laboratorio_14,"Enteroco")|
+           str_detect(laboratorio_14,"enteroco"))
+
+num_pacientes %>% datatable()
+num_pacientes <- nrow(num_pacientes)
+
+tibble(
+  código_pirasoa = "IRASH070",
+  año = año,
+  trimestre = trimestre,
+  numerador = num_pacientes,
+  denominador = estancias,
+  indicador = round(((num_pacientes/estancias)* 1000),digits = 3)) %>% 
+  flextable() %>% 
+  theme_vanilla() %>% 
+  colformat_num(big.mark = "")
+```
+
+# IRASH071
+Densidad de incidencia de pacientes ingresados con E. coli BLEE. Nº de pacientes ingresados con infección/colonización con Escherichia coli BLEE*1000/días de estancias en el periodo
+```{r}
+# IRAS por Escherichia coli multirresistente (87) (E.D.O.)
+# E. coli prod. BLEE
+
+num_pacientes <- edos_iras %>%
+  filter(evento == "IRAS por Escherichia coli multirresistente (87) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital") %>% 
+  filter(laboratorio_14 == "E. coli prod. BLEE")
+
+num_pacientes %>% datatable()
+num_pacientes <- nrow(num_pacientes)
+
+tibble(
+  código_pirasoa = "IRASH071",
+  año = año,
+  trimestre = trimestre,
+  numerador = num_pacientes,
+  denominador = estancias,
+  indicador = round(((num_pacientes/estancias)* 1000),digits = 3)) %>% 
+  flextable() %>% 
+  theme_vanilla() %>% 
+  colformat_num(big.mark = "")
+```
+
+
+# IRASH072
+Densidad de incidencia de pacientes ingresados con K. pneumoniae BLEE. Nº de pacientes ingresados con infección/colonización por K. pneumoniae BLEE*1000/días de estancias en el periodo
+```{r}
+# IRAS por Klebsiella multirresistente (86) (E.D.O.)
+
+num_pacientes <- edos_iras %>%
+  filter(evento == "IRAS por Klebsiella multirresistente (86) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital") %>% 
+  filter(str_detect(laboratorio_14,"BLEE")) 
+
+num_pacientes %>% datatable()
+num_pacientes <- nrow(num_pacientes)
+
+tibble(
+  código_pirasoa = "IRASH072",
+  año = año,
+  trimestre = trimestre,
+  numerador = num_pacientes,
+  denominador = estancias,
+  indicador = round(((num_pacientes/estancias)* 1000),digits = 3)) %>% 
+  flextable() %>% 
+  theme_vanilla() %>% 
+  colformat_num(big.mark = "")
+```
+
+
+# IRASH073
+Densidad de incidencia de pacientes ingresados con Enterobacterias productoras de carbapenemasas. Nº de pacientes ingresados con infección/colonización por Enterobacterias productoras de carbapenemasas/días de estancias en el periodo*1000
+```{r}
+# IRAS por Escherichia coli multirresistente (87) (E.D.O.) 
+pacientes1 <- edos_iras %>%
+  filter(evento == "IRAS por Escherichia coli multirresistente (87) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital") %>% 
+  filter(laboratorio_14 != "E. coli prod. BLEE")
+
+# IRAS por Klebsiella multirresistente (86) (E.D.O.)
+pacientes2 <- edos_iras %>%
+  filter(evento == "IRAS por Klebsiella multirresistente (86) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital") %>% 
+  filter(!str_detect(laboratorio_14,"BLEE"))
+
+# IRAS por otras enterobacterias multirresistentes (96) (E.D.O.)
+pacientes3 <- edos_iras %>%
+  filter(evento == "IRAS por otras enterobacterias multirresistentes (96) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital")
+
+
+# IRAS por Steno. Maltophilia MR(1010) (E.D.O.)
+pacientes4 <- edos_iras %>%
+  filter(evento == "IRAS por Steno. Maltophilia MR(1010) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital")
+
+
+pacientes <- rbind(pacientes1, pacientes2, pacientes3, pacientes4)
+
+pacientes %>% 
+  datatable()
+
+num_pacientes <- pacientes %>% 
+  nrow()
+
+
+tibble(
+  código_pirasoa = "IRASH073",
+  año = año,
+  trimestre = trimestre,
+  numerador = num_pacientes,
+  denominador = estancias,
+  indicador = round(((num_pacientes/estancias)* 1000),digits = 3)) %>% 
+  flextable() %>% 
+  theme_vanilla() %>% 
+  colformat_num(big.mark = "")
+```
+
+
+# IRASH074
+Densidad de incidencia de pacientes ingresados con P. aeruginosa multi-resistente. Nº de pacientes ingresados con infección/colonización P. aeruginosa multi-resistente*1000/días de estancias en el periodo
+```{r}
+num_pacientes <- edos_iras %>%
+  filter(evento == "IRAS por Pseudomonas aeruginosa multirresistente (1010) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital") 
+
+num_pacientes %>% datatable()
+num_pacientes <- nrow(num_pacientes)
+
+tibble(
+  código_pirasoa = "IRASH074",
+  año = año,
+  trimestre = trimestre,
+  numerador = num_pacientes,
+  denominador = estancias,
+  indicador = round(((num_pacientes/estancias)* 1000),digits = 3)) %>% 
+  flextable() %>% 
+  theme_vanilla() %>% 
+  colformat_num(big.mark = "")
+
+```
+
+# IRASH075
+Densidad de incidencia de pacientes ingresados con A. baumannii multi-resistente. Nº de pacientes ingresados con infección/colonización con A. baumannii multi-resistente*1000/días de estancias en el periodo
+```{r}
+# IRAS por A. baumannii multirresistente (84) (E.D.O.)
+num_pacientes <- edos_iras %>%
+  filter(evento == "IRAS por A. baumannii multirresistente (84) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital") 
+
+num_pacientes %>% datatable()
+num_pacientes <- nrow(num_pacientes)
+
+tibble(
+  código_pirasoa = "IRASH075",
+  año = año,
+  trimestre = trimestre,
+  numerador = num_pacientes,
+  denominador = estancias,
+  indicador = round(((num_pacientes/estancias)* 1000),digits = 3)) %>% 
+  flextable() %>% 
+  theme_vanilla() %>% 
+  colformat_num(big.mark = "")
+```
+
+
+
+# IRASH076
+Densidad de incidencia de pacientes hospitalarios con C. difficile. Nº de pacientes hospitalarios con infección por C.difficile*1000/días de estancias en el periodo
+```{r}
+num_pacientes <- edos_iras %>%
+  filter(evento == "IRAS por Clostridium difficile (1009) (E.D.O.)") %>%
+  filter(ambito == "Hospitalario, Inicio en este hospital"|
+           ambito == "Inicio hospitalario, en este hospital") 
+
+num_pacientes %>% datatable()
+num_pacientes <- nrow(num_pacientes)
+
+tibble(
+  código_pirasoa = "IRASH076",
+  año = año,
+  trimestre = trimestre,
+  numerador = num_pacientes,
+  denominador = estancias,
+  indicador = round(((num_pacientes/estancias)* 1000),digits = 3)) %>% 
+  flextable() %>% 
+  theme_vanilla() %>% 
+  colformat_num(big.mark = "")
+```
+
